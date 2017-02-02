@@ -35,11 +35,30 @@
     -moz-transform: translate(0, 10px); }
   to {
     -moz-transform: translate(0, 0px); } }
-#logo-container {
+#conteudo {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 128px;
-  width: 100%; }
-  #logo-container #logo {
-    width: 35%; }
+  top: 0;
+  width: 100%;
+  overflow: hidden; }
+  #conteudo #logo-container {
+    padding: 128px 0 0 0;
+    width: 100%; }
+    #conteudo #logo-container #logo {
+      width: 35%; }
+      @media screen and (max-device-width: 850px) {
+        #conteudo #logo-container #logo {
+          width: 70%; } }
+  #conteudo #rodape {
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    text-align: center;
+    color: white; }
+    #conteudo #rodape .glyphicon {
+      color: rebeccapurple; }
 
 /*# sourceMappingURL=estilo.css.map */

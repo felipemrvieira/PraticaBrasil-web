@@ -36,14 +36,40 @@
         to {-moz-transform: translate(0, -0px);}   
     }
 
-#logo-container{
+#conteudo{
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 128px;
+    top: 0;
     width: 100%;
+    overflow: hidden;
     
+    #logo-container{
+    padding: 128px 0 0 0;
+    width: 100%;
+        #logo{
+            width: 35%;
+            @media screen and (max-device-width: 850px) {
+                width: 70%;
+            }
+        }
+    }
     
-    #logo{
-        width: 35%;
+    #rodape{
+        width: 100%;
+        position: absolute;
+        bottom: 32px;
+        left: 0;
+        text-align: center;
+        color: white;
+        
+        .glyphicon{
+            color: rebeccapurple;
+        }
     }
     
 }
+
+
+

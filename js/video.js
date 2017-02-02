@@ -22,6 +22,7 @@ function scaleVideoContainer() {
     var unitHeight = parseInt(height) + 'px';
     $('.homepage-hero-module').css('height',unitHeight);
     $('#capa').css('height',unitHeight);
+    $('#conteudo').css('height',unitHeight);
     
 
 }
