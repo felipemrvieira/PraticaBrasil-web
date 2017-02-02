@@ -1,0 +1,96 @@
+<!--
+                                   .~<<-''..   '<                               
+                                .'~<=======+<-  (.      - '                     
+                              .'<============(-<=+~-(+=+s+(                     
+                             .(=============<~zzsszzhszzzz.                     
+                            '+======+-'~===~'=z==ss+s<'ss~.                     
+                           -========<...=<'~=s===+z( =.s<                       
+                          '=========+~'(('+zs==s= -h (D(                        
+                         .+=+==========+'sz=====z- =z+~                         
+                        .(===+(+=======-+z======s=.=s~.                         
+                        .===='.~======<~z========z=~-++.                        
+                       .<====(~<======<~z=====szs(-~==='                        
+                       <s===+==========~(zzszz=(--+==+=~                        
+                       (===============+-~<<((--<====+=(.                       
+                       .=================(~~~(+===('<==+'                       
+                       .============++============('<=+=<                       
+                       .+==========<.'======<+===+===++=<                       
+                       .<==<(======<'~=====-..<========+'                       
+                        ~==''=====+=======+...-========'                        
+                        '==++==============('-+=======+.                        
+                        .(===+============+++=========-                         
+                         .======++======+<<+<<<+<<<<<<..     .      .....       
+                          -====(..(====+(=sss=+~+s==+=zD(  .sz(    ~z=zzzs<.    
+                          .~==='...====<=z<<+z=-+=+sz+<+-  <hzz.   ~hs<<<sD+    
+                           .-==<''(===++s=~((+<+++(+h-    'zs=h<   ~h=   'zz'   
+                            .~s========<=zs==+<==(.+h~    +D(.zz.  ~h=   -zz'   
+                             .(+=======+(<=zhs+(-. =h~   'zs. <h<  ~z=++<sh<    
+                               ..-(+====<~~~~=h~   +h~   +zs===zz. ~z=szhz(     
+                                   ..'-(z+-. +D<   +h~  'zs+====h< -h= .=h<     
+                                       -hhs=shz'   sD~  sD<    'hD.'Ds  .sD=.   
+                                        .(+s=<.    <s- '=+.     (s~'=<   '=s~   
+
+                                       .... ....  ..     .'-'.    ...     ...   
+                                       +zssssszs .zz(  .+shhhs+-  =h=    .sh+   
+                                       +zssssss= 'zh(  =hs++=zD+  =h=    .sh+   
+                                       <z=.      'sz( 'zz<   -<   +z=     =z+   
+                                       +zs       'sz( 'zs+'.      +z+     =z+   
+                                       +z=<<<<+~ 'sz(  +hzzs+('   +z=(<<<<=z+   
+                                       +z=hhhhB= 'sz(   ~=shhhz~  +sshhhhh=s+   
+                                       +z=~---~' 'sz(     .-(=sz. +z=----~=z+   
+                                       <zs       'sz(  (<    <zz' +z+     =z+   
+                                       <zs.      'sz( (Dh=(~(=zs. +z=    .=z+   
+                                       =Dz.      -hD< '<shDhDhs-  sDs    .zD=   
+                                       ~<(.      .(<-   .~(<<~.   ~<~     (<~   
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pratica Brasil</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/video.js"></script>
+</head>
+<body>
+   <div class="homepage-hero-module">
+        <div class="video-container">
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+                <source src="video/WEBM/Park-Stroll.webm" type="video/webm" />
+                <source src="video/MP4/Park-Stroll.mp4" type="video/mp4" />
+            </video>
+            <div class="poster hidden">
+                <img src="video/Snapshots/Park-Stroll.jpg" alt="bg">
+            </div>
+        </div>
+    </div>
+    <div id="capa"></div>
+    
+    <div id="logo-container" class="container-fluid floating">
+        <img id="logo"  class="center-block animated fadeInDown" src="img/marca.png" alt="logo pratica brasil">
+    </div>
+    
+    
+    <script>
+    var angle = 0;
+    var test = $('#capa');
+    function changeAngle() {
+        angle = (angle - 1) % 360;
+        test.css({
+            'background': '-webkit-linear-gradient(' + angle + 'deg ,#2acac0 2%,#0c566a 79%,#0c566a 79%,#0c566a 100%)'
+        });
+    }
+    //setInterval(changeAngle, 50);
+    </script>
+    
+</body>
+</html>
