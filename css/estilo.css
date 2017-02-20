@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'roboto';
+  src: url("fonts/roboto/Roboto-Thin.ttf") format("truetype"); }
+@font-face {
+  font-family: 'asiyah';
+  src: url("fonts/AsiyahScript.ttf") format("truetype"); }
 #capa {
   background: #2acac0;
   background: -moz-linear-gradient(45deg, #2acac0 2%, #0c566a 79%, #0c566a 79%, #0c566a 100%);
@@ -47,10 +53,17 @@
     padding: 128px 0 0 0;
     width: 100%; }
     #conteudo #logo-container #logo {
-      width: 35%; }
+      width: 30%; }
       @media screen and (max-device-width: 850px) {
         #conteudo #logo-container #logo {
           width: 70%; } }
+  #conteudo .chamada {
+    padding-top: 32px; }
+    #conteudo .chamada p {
+      font-size: 18px;
+      font-family: 'roboto';
+      color: white;
+      text-align: center; }
   #conteudo #rodape {
     width: 100%;
     position: absolute;
@@ -58,7 +71,21 @@
     left: 0;
     text-align: center;
     color: white; }
+    #conteudo #rodape a {
+      color: white;
+      font-family: 'roboto';
+      text-decoration: underline; }
     #conteudo #rodape .glyphicon {
       color: rebeccapurple; }
+
+#conteudo2 {
+  padding: 32px 32px 32px 32px; }
+  #conteudo2 .heading {
+    font-family: 'roboto';
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    color: #0c566a;
+    padding-bottom: 32px; }
 
 /*# sourceMappingURL=estilo.css.map */
